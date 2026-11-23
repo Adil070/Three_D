@@ -231,3 +231,4 @@ Diagonal or curved walls: approximate them with a few small boxes.
 - **Look direction** uses "grab the world" dragging (like Street View): drag left to look right. This feels natural on touch, and desktop uses the same rule for consistency. Change it in `FirstPersonControls.tsx` if you prefer the opposite.
 - **Room shortcuts** fly straight to the saved camera, ignoring walls (they are animated teleports). Tap-to-move and keyboard walking always collide.
 # Three_D
+# Three_D
