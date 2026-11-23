@@ -1,0 +1,76 @@
+{
+  "project": {
+    "name": "Demo Residences",
+    "location": "Sample City",
+    "description": "Demo project used for development. Splat files are not included — the app renders procedural placeholders until you add them."
+  },
+  "exterior": {
+    "splat": "exterior.ply",
+    "transform": { "position": [0, 0, 0], "rotation": [0, 0, 0], "scale": 1 },
+    "camera": {
+      "position": [40, 24, 44],
+      "target": [0, 15, 0],
+      "minDistance": 18,
+      "maxDistance": 110,
+      "minPolarAngle": 20,
+      "maxPolarAngle": 85
+    },
+    "hotspots": [{ "unitId": "a-704", "position": [0, 24, 7.6], "label": "Residence 704" }]
+  },
+  "units": [
+    {
+      "id": "a-704",
+      "name": "Residence 704",
+      "type": "2BHK",
+      "areaSqFt": 861,
+      "floor": 7,
+      "status": "available",
+      "interior": {
+        "splat": "units/a-704/interior.ply",
+        "transform": { "position": [0, 0, 0], "rotation": [0, 0, 0], "scale": 1 },
+        "floorHeight": 0,
+        "ceilingHeight": 2.7,
+        "spawn": { "position": [-3.8, -2.8], "yaw": -130 },
+        "rooms": [
+          {
+            "name": "Living & Dining",
+            "position": [-3.8, -2.8],
+            "yaw": -130,
+            "bounds": { "min": [-5, -4], "max": [1, 1.5] }
+          },
+          {
+            "name": "Kitchen",
+            "position": [1.8, -3.2],
+            "yaw": -135,
+            "bounds": { "min": [1, -4], "max": [5, 0] }
+          },
+          {
+            "name": "Master Bedroom",
+            "position": [-0.2, 2.2],
+            "yaw": 105,
+            "bounds": { "min": [-5, 1.5], "max": [1, 4] }
+          },
+          {
+            "name": "Bedroom 2",
+            "position": [1.6, 0.6],
+            "yaw": -135,
+            "bounds": { "min": [1, 0], "max": [5, 4] }
+          }
+        ],
+        "collision": [
+          { "min": [-5.075, -4.075], "max": [5.075, -3.925] },
+          { "min": [-5.075, 3.925], "max": [5.075, 4.075] },
+          { "min": [-5.075, -4.075], "max": [-4.925, 4.075] },
+          { "min": [4.925, -4.075], "max": [5.075, 4.075] },
+
+          { "min": [0.925, -4], "max": [1.075, -2.5] },
+          { "min": [0.925, -1], "max": [1.075, 0.075] },
+          { "min": [0.925, 1.425], "max": [1.075, 4] },
+          { "min": [1.075, -0.075], "max": [5, 0.075] },
+          { "min": [-5, 1.425], "max": [-1.5, 1.575] },
+          { "min": [-0.5, 1.425], "max": [0.925, 1.575] }
+        ]
+      }
+    }
+  ]
+}

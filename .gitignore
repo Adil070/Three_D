@@ -1,0 +1,12 @@
+node_modules
+dist
+*.local
+.DS_Store
+.code-review-graph
+
+# Splat files are often 50–500 MB. Uncomment these to keep them out of git
+# (host them on a CDN or use Git LFS instead — see README).
+# public/projects/**/*.ply
+# public/projects/**/*.splat
+# public/projects/**/*.ksplat
+# public/projects/**/*.spz
